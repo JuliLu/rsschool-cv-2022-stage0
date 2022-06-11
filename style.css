@@ -108,3 +108,93 @@ body{
 .about.education li{
     margin-bottom: 15px;
 }
+.container .right_Side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.about{
+    margin-bottom: 50px;
+
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: #333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: rgb(122, 117, 117);
+    font-weight: 600;
+}
+
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.interest ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.footer-icons {
+    display: flex;
+    margin: 0 auto;
+    padding: 25px;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.github-icons i{
+    color: #6B434C;
+}
+.footer-icons span{
+    color: #6B434C;
+    margin: 0px 15px 0px 15px;
+}
+
+
+@media(max-width: 1000px) {
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width: 800px){
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year_company{
+        /* min-width: 150px; */
+        margin-bottom: 5px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr); 
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
